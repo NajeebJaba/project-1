@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Child Safety</title>
+
+        <meta charset="UTF-8">
+
+        <!-- My Settings (CSS+JS) -->
+        <link rel="stylesheet" href="includes/style.css">
+        
+        <!-- Accordion (JQuery+CSS) -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="includes/Accordion.css">
+        <script src="includes/Accordion.js"></script>
+
+        <!-- Bootstrap Settings (CSS+JS+JQuery)-->
+		 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" async></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" async></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" async></script>	
+	  
+	</head>
+	<body id="thiskid">
+		<div id="wrapper">
+			<header>
+				<!-- <img class="reorder"> -->
+        <a href="index.html" id="MyLogo"></a>
+				<img src="images/Dad.png" class="imageuser">
+				<section>
+					<h6><b>שם משתמש: </b>אמיר</h6><br>
+					<h6><b>תפקיד: </b>הורה</h6>
+				</section>
+			</header>
+			<nav class="Menu"  id="menu">
+				<ul id="navList">
+					<li><a href="#">ילדים שלי</a></li>
+					<li><a href="#">יומן אירועים</a></li>
+					<li><a href="#">מספרי חירום</a></li>
+					<li><a href="#">ברכב</a></li>
+				</ul>
+      </nav> 
+      <main>
+        <h1>אמיר</h1>
+        <form class="form1"action="ChildForm.html" method="get">
+          <ul>
+            <li><b>שם פרטי:</b>אמיר</li>
+            <li><b>שם משפחה:</b>בן דויד</li>
+            <li><b>תאריך לידה:</b>23/06/2015</li>
+            <li><b>מין:</b>זכר</li>
+            <li><b>טלפון ראשי:</b>0502847000</li>
+            <li><b>טלפון משני:</b>0509449131</li>
+            <li>amir1998@hotmail.com<b>:(דואר אלקטרוני(אם יש</b></li>
+          </ul>
+          <section class="col-xl-4 attach-image">
+            <div class="card"><img class="card-img-top" src="images/kid2full.jpg" alt="Card image cap"></div>
+          </section>
+          <button id="Update" name="btn" class="btn btn-primary">עדכון</button>
+        </form>
+        <form action="includes/feedback.php"><input type="submit" id="Delete" name="btn" value="מחיקה" class="btn btn-primary"></form>
+        <form action="index.html"><button id="Back" name="btn" class="btn btn-primary">חזרה</button></form> <br>
+          
+        <section class="Accordion">
+          <div class="container">
+            <div class="header"><h1>הסטוריה</h1></div>
+            <div class="content">
+              <p>
+                <label><input type="time" id="time" value="08:00"><input type="text" id="day" value="שני"></label>
+                <label><input type="time" id="time" value="08:00"><input type="text" id="day" value="שני"></label>
+                <label><input type="time" id="time" value="08:00"><input type="text" id="day" value="שני"></label>
+                <label><input type="time" id="time" value="08:00"><input type="text" id="day" value="שני"></label>
+              </p>
+            </div>
+          </div>
+          <div class="container">
+            <div class="header"><h1>תרופות</h1></div>
+            <div class="content">
+              <p>
+                <label><input type="text" id="text" value="נורופין"></label>
+                <label><input type="text" id="text" value="אקמול"></label>
+                <label><input type="text" id="text" value="אנסולין"></label>
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="clear"></div>
+      </main>
+    </div>
+	</body>
+</html> 
+
+

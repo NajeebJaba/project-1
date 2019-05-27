@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Child Safety</title>
+        <meta charset="UTF-8">
+        <!-- My Settings (CSS) -->
+        <link rel="stylesheet" href="includes/style.css">
+        
+        <!-- Bootstrap Settings (CSS+JS) -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" async></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" async></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" async></script>	
+	
+	</head>
+	<body id="listKids">
+		<div id="wrapper">
+			<header>
+				<img class="reorder">
+        <a href="index.html" id="MyLogo"></a>
+				<img src="images/Dad.png" class="imageuser">
+				<section>
+					<h6><b>שם משתמש: </b>אמיר</h6><br>
+					<h6><b>תפקיד: </b>הורה</h6>
+				</section>
+			</header>
+
+			<nav class="Menu"  id="menu">
+					<ul id="navList">
+						<li><a href="#">ילדים שלי</a></li>
+						<li><a href="#">יומן אירועים</a></li>
+						<li><a href="#">מספרי חירום</a></li>
+						<li><a href="#">ברכב</a></li>
+					</ul>
+			</nav>
+
+			<main>
+				<h2>הילדים שלי</h2><br>
+				<form class="div"><input type="search" id="search" pattern="Search"></form><br>
+				<table class="table">
+				<thead class="thead-light">
+				  <tr>
+						<th scope="col"><p>פרטים</p></th>
+						<th scope="col"><p>שם  משפחה</p></th>
+						<th scope="col"><p>שם פרטי</p></th>
+						<th scope="col"><p>תמונה</p></th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+						<th scope="row"><button class="icon-button imageC" onclick="location.href='ChildDetails.html';" ></button></th>
+						<td><p>בן דויד</p></td>
+						<td><p>אמיר</p></td>
+						<td><img src="images/kid2.png"></td>
+				  </tr>
+				  <tr>
+						<th scope="row"><button class="icon-button imageC" onclick="location.href='ChildDetails.html';" ></button></th>
+						<td><p>בן דויד</p></td>
+						<td><p>יוסי</p></td>
+						<td><img src="images/kid1.png"></td>
+				  </tr>
+				  <tr>
+						<th scope="row"><button class="icon-button imageC" onclick="location.href='ChildDetails.html';" ></button></th>
+						<td><p>בן דויד</p></td>
+						<td><p>אליהו</p></td>
+						<td><img src="images/kid2.png"></td>
+				  </tr>
+				</tbody>
+			</table>
+			<form action="ChildForm.html"><button id="Add" name="btn" class="btn btn-primary">הוספה</button>
+			<div class="clear"></div>
+		</main>
+		
+		</div>
+	</body>
+</html>
